@@ -1,0 +1,3 @@
+[submodule "backend/gateway"]
+	path = backend/gateway
+	url = git@github.com:Dsek-LTH/gateway.git
