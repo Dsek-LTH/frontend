@@ -15,8 +15,8 @@
   "scripts": {
     "start": "concurrently \"react-scripts-ts start\" \"cd backend/gateway; docker-compose up\"",
     "start-user-def": "concurrently \"react-scripts-ts start\" \"cd $GATEWAY_PATH; docker-compose up\"",
-    "start-existing": "react-scripts-ts start",
-    "init-backend": "cd backend/gateway; docker-compose up",
+    "start-use-existing": "react-scripts-ts start",
+    "init-backend": "cd backend/gateway; docker-compose up --detach",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
