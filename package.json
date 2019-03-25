@@ -4,12 +4,19 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.2.0",
+    "@types/graphql": "^14.0.7",
+    "apollo-boost": "^0.3.1",
+    "graphql": "^14.1.1",
     "react": "^16.5.2",
+    "react-apollo": "^2.5.2",
     "react-dom": "^16.5.2",
     "react-scripts-ts": "3.1.0"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
+    "start": "concurrently \"react-scripts-ts start\" \"cd backend/gateway; docker-compose up\"",
+    "start-user-def": "concurrently \"react-scripts-ts start\" \"cd $GATEWAY_PATH; docker-compose up\"",
+    "start-use-existing": "react-scripts-ts start",
+    "init-backend": "cd backend/gateway; docker-compose up --detach",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
@@ -19,6 +26,8 @@
     "@types/node": "^10.11.7",
     "@types/react": "^16.4.16",
     "@types/react-dom": "^16.0.9",
+    "concurrently": "^4.1.0",
     "typescript": "^3.1.2"
-  }
+  },
+  "proxy": "http://localhost:8083"
 }
