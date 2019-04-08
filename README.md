@@ -2,7 +2,7 @@
 
 ## Prerequisites
 * npm & node, for guide see https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-* docker-compose
+* [docker and docker-compose](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 ## Setup
 `npm install`
