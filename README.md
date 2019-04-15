@@ -2,7 +2,7 @@
 
 ## Prerequisites
 * npm & node, for guide see https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-* docker-compose
+* [docker and docker-compose](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 * [an ssh key registered with your Github account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
 ## Setup
